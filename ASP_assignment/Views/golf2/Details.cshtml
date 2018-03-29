@@ -1,0 +1,50 @@
+﻿@model ASP_assignment.Models.golf2
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>golf2</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.golf1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.golf1.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sponsor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sponsor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.driver)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.driver)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.putter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.putter)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
