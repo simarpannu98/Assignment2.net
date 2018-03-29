@@ -23,9 +23,9 @@
                 <ul class="nav navbar-nav">
                     
                     <li>@Html.ActionLink("Golfers", "Index", "golf1")</li>
-                    @if (Request.IsAuthenticated) { 
+                    
                     <li>@Html.ActionLink("check out the Sponsers", "Index", "golf2")</li>
-                    }
+                    
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
